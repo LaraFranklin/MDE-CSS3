@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/bootface/src" modelPluginID="bootface" modelName="Bootface"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>bootface.ecore</foreignModel>
+  <genPackages prefix="Bootface" disposableProviderFactory="true" ecorePackage="bootface.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="bootface.ecore#//Selectores">
+      <genEnumLiterals ecoreEnumLiteral="bootface.ecore#//Selectores/p"/>
+      <genEnumLiterals ecoreEnumLiteral="bootface.ecore#//Selectores/a"/>
+    </genEnums>
+    <genClasses ecoreClass="bootface.ecore#//bootface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootface.ecore#//bootface/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootface.ecore#//bootface/selector"/>
+    </genClasses>
+    <genClasses ecoreClass="bootface.ecore#//selector">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootface.ecore#//selector/nombre"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootface.ecore#//selector/regla"/>
+    </genClasses>
+    <genClasses ecoreClass="bootface.ecore#//regla">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootface.ecore#//regla/atributo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootface.ecore#//regla/valor"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

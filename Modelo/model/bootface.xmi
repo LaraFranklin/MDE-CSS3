@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bootface:bootface
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bootface="http://www.example.org/bootface"
+    xsi:schemaLocation="http://www.example.org/bootface bootface.ecore"
+    name="estilos">
+  <selector
+      nombre="p">
+    <regla atributo="font-size"
+        valor="20px"/>
+    <regla atributo="color"
+        valor="red"/>
+  </selector>
+  <selector
+      nombre="a">
+    <regla atributo="font-size"
+        valor="25px"/>
+    <regla atributo="color"
+        valor="green"/>
+  </selector>
+</bootface:bootface>

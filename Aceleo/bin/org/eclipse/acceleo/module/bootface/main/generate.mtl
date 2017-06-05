@@ -1,0 +1,15 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.example.org/bootface')]
+
+
+[template public generateElement(abootface : bootface)]
+[comment @main/]
+[file (abootface.name+'.css', false, 'UTF-8')]
+[for (sele : selector| abootface.selector)]
+	[sele.nombre/]{[for (re : regla | sele.regla)]
+		[re.atributo/]:[re.valor/];	
+		[/for]}
+[/for]
+	
+[/file]
+[/template]
